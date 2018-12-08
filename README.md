@@ -14,6 +14,7 @@ protonvpn-cli is a command-line tool for Linux and macOS.
 * `wget`
 * `sysctl`
 * `sha512sum`
+* `resolvconf`
 
 The program automatically checks for missing requirements.
 

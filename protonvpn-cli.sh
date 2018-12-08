@@ -56,6 +56,10 @@ function check_requirements() {
       echo "[!] Error: iptables is not installed. Install \`iptables\` package to continue."
       exit 1
     fi
+    if [[ -z $(which resolvconf) ]]; then
+      echo "[!] Error: resolvconf is not installed. Install \`resolvconf\` package to continue."
+      exit 1
+    fi
   fi
 
   sha512sum_func
